@@ -20,21 +20,18 @@ ImageGen/
 │   ├── settings.py
 │   ├── urls.py
 │   ├── wsgi.py
+|   ├── asgi.py
 ├── api/
 │   ├── __init__.py
 │   ├── admin.py
 │   ├── apps.py
 │   ├── models.py
 │   ├── views.py
-│   ├── tasks.py
 │   ├── Image_call.py
 │   ├── urls.py
 │   ├── tests.py
 ├── templates/
 │   ├── home.html
-├── static/
-│   ├── css/
-│   │   ├── styles.css
 ├── manage.py
 ├── celery.py
 └── README.md
@@ -47,6 +44,7 @@ ImageGen/
 - Redis (for Celery)
 - Celery
 - Stable Diffusion API Access
+- eventlet
 
 ## Setup
 - ## Clone the Repository:
@@ -131,5 +129,4 @@ Tests are located in api/tests.py, and they cover various aspects of the applica
   ```
   celery -A ImageGen worker -l info -P eventlet
   ```
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+
