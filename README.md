@@ -1,5 +1,5 @@
 # ImageGen: AI Image Generator
-##Overview
+## Overview
 ImageGen is a Django-based web application that allows users to generate images from text
 prompts using a Stable Diffusion model. The application leverages Celery for asynchronous task
 processing, enabling the parallel generation of images. Users can either input custom prompts or
